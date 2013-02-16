@@ -7,4 +7,4 @@ Tests are done using NUnit Framework
 
 A TDD approach is used
 
-A contributer must only implement feautres that are listed in the Issues
+A contributor must only implement features that are listed in the Issues
