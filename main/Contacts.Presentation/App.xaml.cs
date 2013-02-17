@@ -19,7 +19,12 @@ namespace Contacts.Presentation
             // create contactListViewModel
             ContactListViewModel contactListViewModel = mainWindowViewModel.CreateContactListViewModel();
 
+            // create contactDetailsViewModel
+            ContactDetailsViewModel contactDetailsViewModel = mainWindowViewModel.CreateContactDetailsViewModel();
+
             mainWindow.contactListView1.DataContext = contactListViewModel;
+
+            mainWindow.contactDetailsView1.DataContext = contactDetailsViewModel;
             
             mainWindow.DataContext = mainWindowViewModel;
 

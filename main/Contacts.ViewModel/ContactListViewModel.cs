@@ -3,12 +3,10 @@ using System.ComponentModel;
 
 namespace Contacts.ViewModel
 {
-    public class ContactListViewModel : INotifyPropertyChanged
+    public class ContactListViewModel : ViewModelBase
     {
         private IList<string> contactNames;
         
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public IList<string> ContactNames
         {
             get { return contactNames; }
@@ -17,18 +15,9 @@ namespace Contacts.ViewModel
                 if (contactNames != value)
                 {
                     contactNames = value;
-                    OnPropertyChanged("ContactNames");
+                    RaisePropertyChanged("ContactNames");
                 }
             }
-        }
-
-        public ContactListViewModel()
-        {
-        }
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            if(PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

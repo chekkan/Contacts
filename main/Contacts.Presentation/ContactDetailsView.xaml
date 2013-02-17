@@ -6,6 +6,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <ScrollViewer Height="300" Name="scrollViewer1" Width="296">
-        <Label Content="{Binding Path=Name}" Height="28" Name="label1" />
+        <Label Content="{Binding Path=ContactName}" Height="28" Name="label1" />
     </ScrollViewer>
 </UserControl>

@@ -7,5 +7,11 @@
             ContactListViewModel viewModel = new ContactListViewModel();
             return viewModel;
         }
+
+        public ContactDetailsViewModel CreateContactDetailsViewModel()
+        {
+            ContactDetailsViewModel viewModel = new ContactDetailsViewModel(null);
+            return viewModel;
+        }
     }
 }

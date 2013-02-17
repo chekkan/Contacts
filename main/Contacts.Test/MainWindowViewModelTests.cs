@@ -12,5 +12,12 @@ namespace Contacts.Test
              MainWindowViewModel viewModel = new MainWindowViewModel();
             Assert.IsInstanceOf<ContactListViewModel>(viewModel.CreateContactListViewModel());
         }
+
+        [Test]
+        public void Test_CreateContactDetailsViewModel_Returns_ContactDetailsViewModel()
+        {
+            MainWindowViewModel viewModel = new MainWindowViewModel();
+            Assert.IsInstanceOf<ContactDetailsViewModel>(viewModel.CreateContactDetailsViewModel());
+        }
     }
 }
