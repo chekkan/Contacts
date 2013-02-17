@@ -51,6 +51,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ContactDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ContactListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -62,6 +66,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContactDetailsView.xaml.cs">
+      <DependentUpon>ContactDetailsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContactListView.xaml.cs">
       <DependentUpon>ContactListView.xaml</DependentUpon>

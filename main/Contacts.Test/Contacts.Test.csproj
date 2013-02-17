@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationViewModelTests.cs" />
+    <Compile Include="ContactDetailsViewModelTests.cs" />
     <Compile Include="ContactListViewModelTests.cs" />
     <Compile Include="MainWindowViewModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

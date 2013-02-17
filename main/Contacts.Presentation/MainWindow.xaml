@@ -8,5 +8,6 @@
             <ColumnDefinition Width="357*" />
         </Grid.ColumnDefinitions>
         <my:ContactListView Margin="12,12,9,12" x:Name="contactListView1" />
+        <my:ContactDetailsView Grid.Column="1" HorizontalAlignment="Left" Margin="0,12,0,0" x:Name="contactDetailsView1" VerticalAlignment="Top" Height="287" Width="345" />
     </Grid>
 </Window>
